@@ -10,6 +10,7 @@
 }
 body{
 font-family: 'Slabo 27px', serifa;
+width: 100%;
 }
 :root{
   --verdeE: #8fa66d;
@@ -26,21 +27,35 @@ font-family: 'Slabo 27px', serifa;
 }
 
 .container{
-    max-width: 1440px;
-    padding: 0 5%;
+    max-width: 98rem;
+    padding: 0 2%;
     margin: 0 auto;
+    
 }
 
 section,footer{
-    padding: 2.7rem 0;
+    padding: 0;
 }
 .bum{
     padding: 15px 25px;
     color: white;
     border: none;
     cursor: pointer;
-    background-image: var(--bum);
-   
+    background-image: var(--bum);  
+}
+.bum2{
+    background-image: var(--bum);  
+    padding: 2% 5%;
+    color: white;
+    border: none;
+    cursor: pointer;
+
+}
+/*img*/
+
+.img2{
+    width: 50%;
+    height: 30%;
 }
  /* classs do site*/
  nav{
@@ -73,10 +88,6 @@ main .container{
      margin-top: 20px;
 
 }
-.img1{
-    width: 20%;
-    height: 20%;
-}
 
 .main-text{
      width: 50%;
@@ -104,7 +115,7 @@ main .container .main-img{
 }
 main .container .main-text{
     width: 100%;
-    text-align: center;
+    
 }
 main .container .main-text h1{
 font-size: 4rem;
@@ -131,11 +142,11 @@ background: #733620;
     color: beige;
     font-size: 1.6rem;
     font-weight: 600;
-    width: 50%;
+   
 }
 .resultados .numeros{
    display: flex;
-   align-items: center;
+   align-items: 0;
    justify-content: center;
    color:beige;
 }
@@ -149,22 +160,208 @@ font-size: 0 20px;
     font-size: 30px;
     font-weight: 600;
 }
-.resultados .container{
-    flex-direction: column;
-}
-.resultados .resultado-text .resultados .numeros{
-    width: 100%;
-    text-align: center;
-}
 .numeros{
-margin-top: 30px;
+margin-top: 2%;
+margin-bottom: 2%;
 }
-@media (max-width:400px){
-    .resultados .numeros{
-        flex-direction:column;
-
-    }
 main .container .main-text h1 {
    font-size: 3rem;
 }
+
+/*abs*/
+.diferentes .conteiner {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px auto;
+    
 }
+.diferentes .abas{
+    width: 20%;
+    cursor: pointer;
+    padding: 20px;
+    border-radius: 15px;
+    background-color:#d98555;
+    transition: 0.3s;
+    
+}
+.diferentes .abas img{
+    width: 60px;
+}
+.diferentes .abas .titulo{
+    margin: 13px 0;
+    font-weight: 600;
+}
+.diferentes .abas:hover{
+ box-shadow: 0px 10px 67px 8px #000000; 
+}
+.diferentes .abas p{
+    margin: 20px;
+    flex-direction: column;
+}
+
+/*JANELA*/
+.casa .container{
+    display: flex;
+    align-items: center;
+}
+.casa .casa-img{
+    width: 50%;
+}
+.casa .casa-img img{
+    width: 100%;
+    border-radius: 10px;
+}
+.casa .casa-text{
+    width: 70%;
+    padding-left: 0;
+}
+.casa .casa-text h2{
+    font-size: 2.5rem;
+}
+.casa .casa-text p{
+    margin: 20px 0;
+    color: var(#00000000);
+}
+.casa .casa-text p b{
+ color: #000000;
+ font-size:25px; 
+} 
+    /*casas*/
+
+.imgs {
+width: 15% ;
+}
+.lugares .azul{
+   font-size: 24px;
+   font-weight: 600;
+   color: #0060f0; 
+}
+.lugares .h2{
+   font-size: 2.5rem;
+}
+.cads{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.lugares .cads .cads-item{
+width: 30%;
+text-align: center;
+padding: 30px 0;
+border-radius: 20px;
+box-shadow: 0px 35px 97px -15px rgba(0, 0, 0, 0.08);
+}
+.lugares .cads img{
+  width: 80px;
+}
+.lugares .cads .local-casa{
+    color:#99969600;
+    margin: 5px 0;
+}
+.lugares .cads .Doe{
+font-size: 30px;
+font-weight: 500;
+}
+.lugares .cads .contato{
+    margin-bottom: 20px;
+    color: var(--vinho);
+}
+.lugares .cads button{
+    padding: 10px 20px ;
+    color: white;
+    background-color: #733620;
+    border: none;
+}
+.empresas{
+    background-color: var(--amarelo);
+}
+.empresas .box-empresas{
+    text-align: center;
+    padding: 100px;
+    background-image: url('img/final.png');
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+}
+.empresas .box-empresas h2{
+    font-size: 2.5rem;
+}
+.empresas .box-empresas p{
+    margin: 13px 0;
+}
+.empresas .box-empresas input{
+    width: 35%;
+    padding: 15px;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    color: #00000098;
+    background-color: #faefda;
+}
+.empresas .box-empresas button{
+    font-size: 15px;
+    border: none;
+    outline: none;
+    padding: 15px;
+    border-radius: 14px;
+    background-color: #8fa66d;
+    cursor: pointer;
+
+}
+/*responsivo*/
+@media (max-width:600px){
+    .resultados .container{
+        flex-direction: column;}
+    
+    }@media (max-width:400px){
+    .resultados .resultado-text .resultados .numeros{
+        text-align: center;
+    }}
+    @media (max-width:500px){
+        .resultados .numeros{
+            flex-direction:column;}
+    }
+    @media (max-width:900px){
+        .diferentes .conteiner{
+            flex-direction: column;
+        
+        }
+        .diferentes .abas{
+            width: 90%;
+            margin: 20px;}
+    
+        .diferentes .abas p{
+                margin: 5%;}
+    }
+    @media (max-width:900px){
+        .casa .container{
+            align-items: flex-start;
+        margin: 2%;
+        flex-direction: column-reverse;
+    
+        }
+        .casa .casa-text
+        .casa .casa-img{
+            width: 100%;
+            text-align:right;
+        }} 
+        @media (max-width:600px){
+            .lugares .cads{
+             flex-direction: column;
+            }
+            .lugares .cads .cads-item{
+             width: 100%;
+             margin-top: 50px;   
+            }
+            .empresas .box-empresas input{
+                width: 90%;
+            }
+            .empresas .box-empresas{
+                padding: 50px;
+            }
+            .empresas .box-empresas button{
+                width: 50%;
+                margin-top: 20px;
+            }
+        }
